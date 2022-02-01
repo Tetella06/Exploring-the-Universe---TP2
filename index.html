@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+        background-image: url("imagens/fundo\ gif.gif");
+    }
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Exploring The Universe</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo">Mapa Intergalático</h1>
+      <nav id="menu-principal">
+        <ul>
+            <li><a class="elementosMenu" href="index.html">Quiz</a></li>
+            <li> <a class="elementosMenu" href="tripulantes.html">Criadores da Missão</a></li>
+            <li> <a class="elementosMenu" href="fontes.html">Referências</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!---nav de levar aos planetas-->
+    <nav id="navPlanetas">
+      <ul>
+        <li><button class="btnPlanetas" id="btnMercurio"></button><br>
+        <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.32 (4).jpeg"></li>
+        <li><button class="btnPlanetas" id="btnVenus"></button> <br>
+        <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.32 (3).jpeg"></li>
+        <li><button class="btnPlanetas" id="btnTerra"></button> <br>
+          <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.32 (2).jpeg"></li>
+        <li><button class="btnPlanetas" id="btnMarte"></button> <br>
+          <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.32 (1).jpeg"></li>
+        <li><button class="btnPlanetas" id="btnJupiter"></button> <br>
+          <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.32.jpeg"></li>
+        <li><button class="btnPlanetas" id="btnSaturno"></button> <br>
+          <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.31 (2).jpeg"></li>
+        <li><button class="btnPlanetas" id="btnUrano"></button> <br>
+          <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.31 (1).jpeg"></li>
+        <li><button class="btnPlanetas" id="btnNetuno"></button> <br>
+          <img class="nomePlaneta" src="imagens\WhatsApp Image 2022-01-31 at 17.15.31.jpeg"></li>
+      </ul>
+    </nav>
+
+      <div id="perguntasMercurio">
+        <form class="perguntas">
+          <div id="mercurio">
+                      <div id="questao-1">
+                        <h2>Mercúrio</h2>
+                        <h3>Questão 1</h3>
+                          <h4>Conforme as informações, Mercúrio possui quantos quilômetros de distância do sol?</h4>
+                            <input id="resposta-mercurio-1" type="radio" name="resposta1">50.909.227 km<br>
+                            <input id="resposta-mercurio-2" type="radio" name="resposta1">108.209.475 km<br>
+                            <input id="resposta-mercurio-3" type="radio" name="resposta1" id="mercurio-1-correta">57.909.227 km<br>
+                      </div>
+      
+                    <div id="questao-2">
+                        <h2>Questão 2</h2>
+                        <h3>Mercúrio é considerado:</h3>
+                            <input id="resposta-mercurio-1" type="radio" name="resposta2">O segundo menor planeta do sistema solar<br>
+                            <input id="resposta-mercurio-2" type="radio" name="resposta2" id="mercurio-2-correta">Recentemente, o planeta mais próximo do sol<br>
+                            <input id="resposta-mercurio-3" type="radio" name="resposta2">O terceiro menor planeta do sistema solar<br>
+                    </div>
+                    
+                    <div id="questao-3">	
+                        <h2>Questão 3</h2>
+                        <h3>Sobre o solo de Mercúrio, é correto afirmar</h3>
+                            <input id="resposta-mercurio-1" type="radio" name="resposta3" id="mercurio-3-correta">o planeta possui 70% de material metálico e 30% de silicatos<br>
+                            <input id="resposta-mercurio-2" type="radio" name="resposta3">o planeta possui 60% de material metálico e 40% de silicatos<br>
+                            <input id="resposta-mercurio-3" type="radio" name="resposta3">o planeta possui 80% de material metálico e 20% de silicatos<br>
+                    </div>
+                    <div id="pontuacao-mercurio"></div>
+            </div>
+          </form>
+      </div>
+      <button id="btn-resposta-mercurio" onClick ="pontuacaoMercurio()" class="submetendo">Submeter Resposta</button>
+
+    <div id="perguntasVenus">
+        <form class="perguntas">
+            <div id="venus">
+              <div id="questao-1-venus">
+                <h2>Vênus</h2>
+                <h2>Questão 1</h2>
+                <h3>Vênus é considerado um planeta:</h3>
+                <input id="resposta-venus-1" type="radio" name="resposta1" id="correta-1-venus" value="1">terrestre<br>
+                <input id="resposta-venus-2" type="radio" name="resposta1" value="2">gasoso<br>
+                <input id="resposta-venus-3" type="radio" name="resposta1" value="3">exterior<br>
+            </div>
+            <div id="questao-2-venus">
+              <h2>Questão 2</h2>
+              <h3>A distância entre o sol e Vênus é de:</h3>
+              <input id="resposta-venus-1" type="radio" name="resposta2" id="correta-2-venus" value="1">108.209.475 km<br>
+              <input id="resposta-venus-2" type="radio" name="resposta2" value="2">acima de 150.000.00 km<br>
+              <input id="resposta-venus-3" type="radio" name="resposta2" value="3">108.210.475 km <br>
+            </div>
+            <div id="questao-3-venus">
+            <h2>Questão 3</h2>
+            <h3>É completada uma órbita a cada quantos dias?</h3>
+            <input id="resposta-venus-1" type="radio" name="resposta3" value="1">200 dias<br>
+            <input id="resposta-venus-2" type="radio" name="resposta3" id="correta-3-venus" value="2">224,65 dias<br>
+            <input id="resposta-venus-3" type="radio" name="resposta3" value="3">226,50 dias <br>
+          </div>
+          <div id="pontuacao-venus"></div>
+      </div> 
+      </form>
+    </div>
+    <button id="btn-resposta-venus" class="submetendo">Submeter Resposta</button>
+
+    <div id="perguntasTerra">
+      <form class="perguntas">
+        <div id="terra">
+          <div id="questao-1-terra">
+            <h2>Terra</h2>
+            <h2>Questão 1</h2>
+              <h3>Daqui a alguns milhões de anos haverá uma alteração de horas em nosso planeta. Isso devido á:</h3>
+              <input id="resposta-terra-1" type="radio" name="resposta1" id="correta-1-terra">O planeta Terra é o único que não 
+              possui o nome de um deus romano, diferente dos outros planetas que possuem nomes baseados nestes deuses<br>
+              <input id="resposta-terra-2" type="radio" name="resposta1">O planeta Terra é o único que não 
+              possui o nome de um deus árabe, diferente dos outros planetas que possuem nomes baseados nestes deuses<br>
+          </div>
+          <div id="questao-2-terra">
+            <h2>Questão 2</h2>
+              <h3>Daqui a alguns milhões de anos haverá uma alteração de horas em nosso planeta, devido: </h3>
+              <input id="resposta-terra-1" type="radio" name="resposta2">Aceleração de rotação da Terra<br>
+              <input id="resposta-terra-2" type="radio" name="resposta2" id="correta-2-terra">Desaceleração de rotação da terra<br>
+              <input id="resposta-terra-3" type="radio" name="resposta2">Expansão do sol<br>
+          </div>
+          <div id="questao-3-terra">
+            <h2>Questão 3</h2>
+              <h3>A terra possui cerca de: </h3>
+              <input id="resposta-terra-1" type="radio" name="resposta3">7 779 km de diâmetro<br>
+              <input id="resposta-terra-2" type="radio" name="resposta3" id="correta-3-terra">12 742 km de diâmetro<br>
+              <input id="resposta-terra-3" type="radio" name="resposta3">45 300 km de diâmetro<br>
+          </div>
+          <div id="pontuacao-terra"></div>
+        </div>
+      </form>
+    </div>
+    <button id="btn-resposta-terra" class="submetendo">Submeter Resposta</button>
+
+
+      <div id="perguntasMarte">
+        <form class="perguntas">
+            <div class="marte">
+              <div id="questao-1-marte">
+                  <h2>Marte</h2>
+                  <h2>Questão 1</h2>
+                  <h3>Quais os principais constituintes de Marte?</h3>
+                  <input id="resposta-marte-1" type="radio" name="resposta1">Hidrogênio e hélio<br>
+                  <input id="resposta-marte-2" type="radio" name="resposta1">Dióxido de carbono e silício<br>
+                  <input id="resposta-marte-3" type="radio" name="resposta1" id="correta-1-marte">Silício, oxigênio e ferro<br>
+              </div>
+              
+              <div id="questao-2-marte">
+                <h2>Questão 2</h2>
+                    <h3>Sobre a temperatura em Marte, podemos afirmar que:</h3>
+                    <input id="resposta-marte-1" type="radio" name="resposta2" id="correta-2-marte">Marte é um planeta frio, tendo como média -60°C<br>
+                    <input id="resposta-marte-2" type="radio" name="resposta2">Marte é um planeta quente com sua temperatura máxima chegando á 55°C<br>
+                    <input id="resposta-marte-3" type="radio" name="resposta2">Marte possui a média de 25°C<br>
+              </div>
+
+              <div id="questao-3-marte">
+                <h2>Questão 3</h2>
+                    <h3>Qual nome é dado para os dois satélites naturais de Marte?</h3>
+                    <input id="resposta-marte-1" type="radio" name="resposta3" id="correta-3-marte">Duas luas de Marte<br>
+                    <input id="resposta-marte-2" type="radio" name="resposta3">Dois sóis de Marte<br>
+                    <input id="resposta-marte-3" type="radio" name="resposta3">A lua e o sol de Marte<br>
+              </div>
+              <div id="pontuacao-marte"></div>
+            </div>
+        </form>
+      </div>
+      <button id="btn-resposta-marte" class="submetendo">Submeter Resposta</button>
+
+
+    <div id="perguntasJupiter">
+      <form class="perguntas">
+        <div id="jupiter">
+                  <div id="questão-1">
+                    <h2>Júpiter</h2>
+                    <h2>Questão 1</h2>
+                      <h3>Sobre o solo:</h3>
+                        <input id="resposta-jupiter-1" type="radio" name="resposta1">Argiloso<br>
+                        <input id="resposta-jupiter-2" type="radio" name="resposta1">Arenoso<br>
+                        <input id="resposta-jupiter-3" type="radio" name="resposta1" id="correta-1-jupiter">Não possui solo<br>
+                  </div>
+
+                  <div id="questão-2">
+                     <h2>Questão 2</h2>
+                     <h3>O que causou uma enorme mancha vermelha presente neste planeta?</h3>
+                        <input id="resposta-jupiter-1" type="radio" name="resposta2" id="correta-2-jupiter">Uma enorme tempestade<br>
+                        <input id="resposta-jupiter-2" type="radio" name="resposta2">Colisao de um asteroide vermelho<br>
+                        <input id="resposta-jupiter-3" type="radio" name="resposta2">Mudança climática constante<br>
+                     
+                  </div>
+                
+                  <div id="questão-3">	
+                     <h2>Questão 3</h2>
+                     <h3>Qual a quantidade de satélites?</h3>
+                        <input id="resposta-jupiter-1" type="radio" name="resposta3" id="correta-3-jupiter">79 satélites<br>
+                        <input id="resposta-jupiter-2" type="radio" name="resposta3">40 satélites<br>
+                        <input id="resposta-jupiter-3" type="radio" name="resposta3">34 satélites<br>
+                     
+                  </div>
+                  <div id="pontuacao-jupiter"></div>
+        </div>
+      </form>
+    </div>
+    <button id="btn-resposta-jupiter" class="submetendo">Submeter Resposta</button>
+
+
+    <div id="perguntasSaturno">
+      <form class="perguntas">
+        <div id="saturno">
+                  <div id="questão-1-saturno">
+                    <h2>Saturno</h2>
+                    <h2>Questão 1</h2>
+                      <h3>Quem foi o responsável por descobrir Saturno?</h3>
+                        <input id="resposta-saturno-1" type="radio" name="resposta1">Nicolaus Copernicus<br>
+                        <input id="resposta-saturno-2" type="radio" name="resposta1" id="correta-1-saturno">Galileu Galilei<br>
+                        <input id="resposta-saturno-3" type="radio" name="resposta1">William Herschel<br>
+                  </div>
+
+                  <div id="questão-2-saturno">
+                     <h2>Questão 2</h2>
+                     <h3>Quantas vezes o planeta já foi explorado?</h3>
+                        <input id="resposta-saturno-1" type="radio" name="resposta2" id="correta-2-saturno">5 vezes<br>
+                        <input id="resposta-saturno-2" type="radio" name="resposta2">3 vezes<br>
+                        <input id="resposta-saturno-3" type="radio" name="resposta2">ainda não há histórico de exploração<br>
+                     
+                  </div>
+                
+                  <div id="questão-3-saturno">	
+                     <h2>Questão 3</h2>
+                     <h3>Sobre saturno, assinale a alternativa correta:</h3>
+                        <input id="resposta-saturno-1" type="radio" name="resposta3" id="correta-3-saturno">É o planeta mais distante que pode ser visto a olho nu da Terra<br>
+                        <input id="resposta-saturno-2" type="radio" name="resposta3">Possui superfície sólida<br>
+                        <input id="resposta-saturno-3" type="radio" name="resposta3">O planeta foi descoberto no ano de 1500<br>  
+                  </div>
+                  <div id="pontuacao-saturno"></div>
+        </div>
+       </form>
+    </div>
+    <button id="btn-resposta-saturno" class="submetendo">Submeter Resposta</button>
+
+
+    <div id="perguntasUrano">
+      <form class="perguntas">
+        <div id="urano">
+          <div id="questão-1-urano">
+            <h2>Urano</h2>
+            <h2>Questão 1</h2>
+            <h3>Seu movimento de translação dura:</h3>
+            <input id="resposta-urano-1" type="radio" name="resposta1">11 anos <br>
+            <input id="resposta-urano-2" type="radio" name="resposta1">35 anos <br>
+            <input id="resposta-urano-3" type="radio" name="resposta1" id="correta-1-urano">84 anos <br>
+          </div>
+          <div id="questão-2-urano">
+            <h2>Questão 2</h2>
+            <h3>Em termos de temperatura, a atmosfera de Urano é considerada a mais:</h3>
+            <input id="resposta-urano-1" type="radio" name="resposta2">quente <br>
+            <input id="resposta-urano-2" type="radio" name="resposta2" id="correta-2-urano">fria <br>
+            <input id="resposta-urano-3" type="radio" name="resposta2" >modificável <br>
+          </div>
+          <div id="questão-3-urano">
+            <h2>Questão 3</h2>
+            <h3>Baseando-se na resposta anterior, os ventos mais fortes de jupiter chegam à:</h3>
+            <input id="resposta-urano-1" type="radio" name="resposta3">-99 graus <br>
+            <input id="resposta-urano-2" type="radio" name="resposta3">-330 graus <br>
+            <input id="resposta-urano-3" type="radio" name="resposta3" id="correta-3-urano">-200 graus <br>
+          </div>
+          <div id="pontuacao-urano"></div>
+        </div>
+      </form>
+    </div>
+    <button id="btn-resposta-urano" class="submetendo">Submeter Resposta</button>
+
+    <div id="perguntasNetuno"></div>
+      <form class="perguntas">
+        <div id="netuno">
+            <div id="questao-1-netuno">
+              <h2>Netuno</h2>
+              <h2>Questão	1</h2>
+              <h3>Quais a composição de Netuno?</h3>
+                <input id="resposta-netuno-1" type="radio" name="resposta1">dióxido de carbono, nitrogênio e argônio <br>
+                <input id="resposta-netuno-2" type="radio" name="resposta1">dióxido de carbono e água<br>
+                <input id="resposta-netuno-3" type="radio" name="resposta1" id="correta-1-netuno">metano, água e amônia <br>
+            </div>
+            <div id="questao-2-netuno">
+              <h2>Questão	 2</h2>
+              <h3>Quanto tempo dura a translação de Netuno ao redor do Sol?</h3>
+                <input id="resposta-netuno-1" type="radio" name="resposta2">104 anos <br>
+                <input id="resposta-netuno-2" type="radio" name="resposta2" id="correta-2-netuno">164 anos<br>
+                <input id="resposta-netuno-3" type="radio" name="resposta2" >90 anos <br>
+            </div>
+            <div id="questao-3-netuno">
+              <h2>Questão	 3</h2>
+              <h3>O planeta é conhecido por ser: </h3>
+                <input id="resposta-netuno-1" type="radio" name="resposta3" id="correta-3-netuno">onde há mais vento <br>
+                <input id="resposta-netuno-2" type="radio" name="resposta3">o segundo menor planeta do sistema solar<br>
+                <input id="resposta-netuno-3" type="radio" name="resposta3" >visível de nosso planeta sempre pela manhã e ao entardecer <br>
+            </div>
+            <div id="pontuacao-neteno"></div>
+        </div>
+      </form>
+    </div>
+    <button id="btn-resposta-netuno" class="submetendo">Submeter Resposta</button>
+
+
+    <button id="botaoTopo" title="Topo"><img id="botaoImagem"  src="imagens\seta 1.png"></button> 
+    <script src="javascript.js" charset="utf-8"></script>
+  </body>
+</html>
